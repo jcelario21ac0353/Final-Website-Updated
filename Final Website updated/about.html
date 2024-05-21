@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<style>
+
+     .back-video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0; /* Adjusted left position to prevent overlap */
+    z-index: -1;
+}
+
+@media (max-width: 576px) {
+    .back-video {
+        height: auto;
+        max-height: 50vh; /* Limit video height on smaller screens */
+    }
+}
+@media (max-width: 768px) {
+    .back-video {
+        max-height: 70vh; 
+    }
+}
+  .mission{
+    margin-top: 40%;
+    margin-bottom: 50px;
+    padding: 50px 300px 50px 300px;
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+    color: #ffffff;
+}
+  .Name{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px; 
+    justify-content: center; 
+}
+h1{
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: bolder;
+}
+.Name p{
+    padding: 20px;
+    text-align: center;
+    font-size: 20px; 
+    font-weight: normal;
+}
+.Name p img{
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 50%; 
+}
+
+/*Who we are*/
+.about-img{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+} 
+
+@media (max-width: 768px) {
+  .mission {
+    margin-top: 180px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .Name p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .Name {
+    grid-template-columns: auto;
+  }
+}
+/*---------Footer css --------------*/
+
+footer {
+    background-color: black;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    padding: 100px 0 30px;
+    
+    font-size: 13px;
+    line-height: 20px;
+}
+footer .row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+footer .col{
+    flex-basis: 25%;
+    padding: 5px;
+}
+footer .logo{
+    width: 170px;
+    margin-bottom: 10px;
+}
+footer .col h3{
+    width: fit-content;
+    margin-bottom: 10px;
+    position: relative;
+    margin-left: 30px;
+}
+footer .col p, .col li{
+    color: white;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+footer .col form{
+    margin-left: 30px;
+}
+footer .social{
+    margin-left: 30px;
+}
+footer .social .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: #f38200;
+    margin-right: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+/*@media*/
+@media (max-width: 992px) {
+  .mission {
+    padding: 50px 30px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 576px) {
+  .mission {
+    margin-top: 180px;
+    padding: 20px; /* Adjust padding */
+  }
+}
+
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top" style="background-color: black;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="images/bodybuilder-male-figure-icon-gym-600nw-2278523791.webp" width="80px" height="60px" alt="">We Gym </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Target
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="chest.html">Chest</a></li>
+              <li><a class="dropdown-item" href="back.html">Back</a></li>
+              <li><a class="dropdown-item" href="legs.html">Legs</a></li>
+              <li><a class="dropdown-item" href="arms.html">Arms</a></li>
+              <li><a class="dropdown-item" href="cardio.html">Cardio</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Footer">Contacts</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+     
+      <section id="about" class="about view">
+        <div class="main">
+            <video autoplay loop muted plays-inline class="back-video"> <source src="images/3196220-uhd_3840_2160_25fps.mp4" type="video/mp4"></video>
+        </div>
+      </section>
+      <div class="Mission-section">
+      <div>
+      <div class="mission">
+        <h1>Our Mission</h1>
+        <p>Welcome to Gym Gear Guide, your ultimate resource for everything related to gym equipment! Our mission is to empower fitness enthusiasts, from beginners to seasoned athletes, with comprehensive, accurate, and up-to-date information about gym equipment. We strive to be the go-to destination for anyone looking to enhance their fitness journey through informed equipment choices.</p>
+  </div>
+</div>
+    <h1>WHO WE ARE</h1>
+    <div class="Name">
+      
+        
+        <p>Hello I'm Dominic <img src="images/434715045_1881696782289725_6524288030302488974_n.jpg" class="about-img" alt=""></p>
+        <p>Hello I'm Jimmy <img src="images/431667722_7500420943342601_1621704791582463874_n.jpg" class="about-img"  alt=""></p>
+        <p>Hello I'm Lawrence <img src="images/378349259_1798839440530962_5141991121553492904_n.jpg" class="about-img"  alt=""></p>
+    </div>
+  </div>
+    <footer id="Footer">
+      <div class="row">
+          <div class="col">
+            <a href="index.html"><img src="images/bodybuilder-male-figure-icon-gym-600nw-2278523791.webp" class="logo" alt="logo"></a>
+              <p>Thank You For Visiting WeGym, We garauntee you to deliver all the quality and Helpfull informations about gym equipments. </p>
+          </div>
+          <div class="col">
+              <h3>ABOUT</h3>
+              <a href="about.html" class="text-decoration-none"><p>About Us</p></a>
+              <p>Privacy Policy & Terms of Use</p>
+          </div>
+          <div class="col">
+              <h3>TARGET</h3>
+                      <ul class="list-unstyled">
+                          <a class="text-decoration-none text-muted" href="chest.html"><li>Chest Equipments</li></a>
+                          <a class="text-decoration-none text-muted" href="back.html"><li>Back Equipments</li></a>
+                          <a class="text-decoration-none text-muted" href="legs.html"><li>Legs Equipments</li></a>
+                          <a class="text-decoration-none text-muted" href="arms.html"><li>Arms Equipments</li></a>
+                          <a class="text-decoration-none text-muted" href="cardio.html"><li>Cardio Equipments</li></a>
+                      </ul>
+          </div>
+          <div class="col">
+              <h3>CONTACT ME</h3>
+              <form>
+                  <input type="email" placeholder="your@email.com" class="email" name="EMAIL">
+                  <button type="submit" class="btn btn-primary btn-sm" style="background-color: #f38200;" id="button">START CONTACT</button> <br>
+                  <caption>You Wanna Look Good? Say less</caption>
+              </form>
+              <div class="social">
+                  <a href="about.html"><i class="fab fa-facebook-f"></i></a>
+                  <a href="about.html"><i class="fab fa-twitter"></i></a>
+                  <a href="about.html"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+          <hr>
+          <p class="text-center"> Copyright © 2024 Pangasinan State University. All Rights Reserved
+              Alaminos City, Pangasinan</p>
+      </div>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

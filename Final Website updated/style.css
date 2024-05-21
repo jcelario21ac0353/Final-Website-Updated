@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+   
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+
+}
+.navbar{
+    background-color: black ;
+}
+
+.view{
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+}
+.home{
+    display: flex;
+    min-height: 120vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+.banner{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url(images/Classic-Physique.png);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(40%);
+}
+.highlights{
+    width: 70%;
+    position: relative;
+    display: inline-block;
+    z-index: 11;
+    color: #fff;
+}
+.highlights h3{
+    display: inline;
+    font-size: 2w;
+    padding: 5px 20px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    border-left: 6px solid #f38200;
+   
+}
+.highlights h1{
+    font-size: 9vw;
+    text-align: center;
+    font-weight: normal;
+}
+.highlights b{
+    color: #f38200;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+.highlights .tagline{
+    color: #d7d7d7;
+    font-size: 15px;
+    text-align: center;
+    font-weight: normal;
+}
+.main{
+    width: 100%;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+
+}
+.main h2{
+    font-size: 2.5vw;
+    position: relative;
+    padding-top: 100px;
+    display: inline-block;
+}
+.main h6{
+    margin-top: 10px;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+}
+#Types{
+    background-color: rgb(15, 15, 15);
+    text-align: center;
+    
+}
+span{
+    color: #f38200;
+}
+.main h2:before{
+    position: absolute;
+    content: '';
+    background: solid #f38200;
+    height: 3px;
+    width: 30 px;
+    right: -15px;
+    bottom: 0;
+    border-radius: 50px;
+}
+.content{
+    padding-bottom: 200px;
+}
+.card{
+    transition: all 0.3s;
+}
+.card:hover{
+    transform: scale(1.10);
+}
+.card-img-top{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;  
+}
+/*----------overlap card css-----------*/
+
+.overlap{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(221, 221, 221);
+}
+.containers{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left{
+    width: 50%;
+    height: 600px;
+    background-image: url(images/bodybuilder-male-figure-icon-gym-600nw-2278523791.webp);
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+.left:hover{
+    transform: scale(1.10);
+}
+
+.right{
+    width: 50%;
+    min-height: 400px;
+    background-color: rgb(216, 214, 214);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color: #030303;
+    margin-left: -150px;
+}
+.right h1{
+    font-size: 40px;
+    font-weight: lighter;
+}
+.right p{
+    margin: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+@media only screen and (max-width: 728px){
+    .containers{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 80%;
+        margin: 0;
+        margin-top: -100px;
+    }
+  
+}
+
+.highlights .button-87 {
+  margin: 10px;
+  padding: 15px 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-decoration: none;
+}
+
+.button-87:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-87:active {
+  transform: scale(0.95);
+}
+.back-video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+/**-------Food section-------*/
+.description {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(15, 15, 15);
+}
+.description.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: left;
+    gap: 20px; 
+}
+.about-image {
+    flex: 1;
+}
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.about-image:hover img {
+    transform: scale(1.1);
+}
+.about-content {
+    flex: 1;
+    height: 450px;
+    width: 550px;
+}
+.about-content h2 {
+   padding: 20px;
+    margin: 40px;
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: rgb(185, 185, 185);
+    text-align: center;
+}
+.about-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #f5f5f5;
+    text-align: center;
+}
+
+
+
+
+/*---------Footer css --------------*/
+
+footer {
+    background-color: black;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    padding: 100px 0 30px;
+    
+    font-size: 13px;
+    line-height: 20px;
+}
+footer .row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+footer .col{
+    flex-basis: 25%;
+    padding: 5px;
+}
+footer .logo{
+    width: 170px;
+    margin-bottom: 10px;
+}
+footer .col h3{
+    width: fit-content;
+    margin-bottom: 10px;
+    position: relative;
+    margin-left: 30px;
+}
+footer .col p, .col li{
+    color: white;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+footer .col form{
+    margin-left: 30px;
+}
+footer .social{
+    margin-left: 30px;
+}
+footer .social .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: #f38200;
+    margin-right: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* @media For smaller screens */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .description.container {
+        padding: 50px 20px;
+    }
+
+    .contents {
+        text-align: center;
+    }
+
+    .col-md-4.mb-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .cards {
+        height: auto;
+    }
+
+    .cards img {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-item {
+        height: auto;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
+    footer .row {
+        flex-direction: column;
+    }
+
+    footer .col {
+        flex-basis: auto;
+        margin-bottom: 20px;
+    }
+
+    footer .social {
+        margin-top: 20px;
+    }
+}
+
+

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script type='text/javascript' src=''></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+</head>
+<style>
+
+.description{
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+.description p{
+    text-indent: 30px;
+    
+}
+.description h2{
+  padding-bottom: 20px;
+}
+
+/*-------- YT VID----------*/
+.containers{
+  margin: 10%;
+  height: 800px;
+
+}
+
+/*Gallery*/
+.chest-gallery{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+.main-img{
+    width: 49%;
+    height: 300px;
+}
+.main-img img{
+    height: 100%;
+    width: 100%;
+}
+.side-gallery{
+    width: 50%;
+}
+.top-img{
+    padding-bottom: 10px;
+}
+.top-img,
+.bottom-img{
+    display: flex;
+    justify-content: space-between;
+}
+.img{
+    width: 49%;
+    height: 100%;
+}
+.img img{
+    width: 100%;
+    height: 145px;
+}
+/**--------footer css--------*/
+footer {
+    background-color: black;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    padding: 100px 0 30px;
+    
+    font-size: 13px;
+    line-height: 20px;
+}
+footer .row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+footer .col{
+    flex-basis: 25%;
+    padding: 5px;
+}
+footer .logo{
+    width: 170px;
+    margin-bottom: 10px;
+}
+footer .col h3{
+    width: fit-content;
+    margin-bottom: 10px;
+    position: relative;
+    margin-left: 30px;
+}
+footer .col p, .col li{
+    color: white;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+footer .col form{
+    margin-left: 30px;
+}
+footer .social{
+    margin-left: 30px;
+}
+footer .social .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: #f38200;
+    margin-right: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+/*-----chest Gallery --------*/
+@media(max-width:780px) {
+    .chest-gallery{
+        flex-direction: column;
+    }
+    .main-img{
+    width: 100%;
+    height: 300px;
+    }
+    .side-gallery{
+        padding-top: 20px;
+        width: 100%;
+    }
+}
+.img-fluid{
+    width: 100%;
+            height: 200px;
+            object-fit: cover;
+}
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top" style="background-color: black;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="images/bodybuilder-male-figure-icon-gym-600nw-2278523791.webp" width="80px" height="60px" alt="">We Gym </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Target
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="chest.html">Chest</a></li>
+                  <li><a class="dropdown-item" href="back.html">Back</a></li>
+                  <li><a class="dropdown-item" href="legs.html">Legs</a></li>
+                  <li><a class="dropdown-item" href="arms.html">Arms</a></li>
+                  <li><a class="dropdown-item" href="cardio.html">Cardio</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Footer">Contacts</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+   
+      <div class="chest-gallery">
+        <div class="main-img">
+            <img src="images/machinechestpresspng.png" alt="">
+        </div>
+        <div class="side-gallery">
+        <div class="top-img">
+            <div class="img">
+                <img src="images/machinechestpess1.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="images/machinechestpress2.png" alt="">
+            </div>
+        </div>
+        <div class="bottom-img">
+            <div class="img">
+                <img src="images/machinechestpress3.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="images/machinechestpress4.jpg" alt="">
+            </div>
+        </div>
+        </div>
+      </div>
+    <hr>
+    </div>
+    
+    <div class="description">
+        <h2>What are Machine Chest Press</h2>
+        <p>Free-weight pressing moves on a flat bench are great, but machine press and cable press variations have some unique benefits. 
+            For one, it's easier to slow down the repetition, both in the concentric and eccentric phases. Stack-loaded machines are also great for quickly doing dropsets.
+        </p>
+    
+        <h3>How to Use</h3>
+<p>
+  
+To perform the machine chest press, begin by adjusting the seat and handles of the machine to the appropriate height. Sit down on the machine with your back firmly against the pad and feet flat on the floor. Grasp the handles with an overhand grip, ensuring your hands are level with your chest. This setup helps maintain proper alignment and maximizes the effectiveness of the exercise.
+
+Once you're in position, push the handles forward in a controlled manner, extending your arms fully. Keep your elbows slightly bent to avoid locking them out. Focus on squeezing your chest muscles as you push the handles away from your body.
+
+After fully extending your arms, slowly reverse the motion and bring the handles back towards your chest. Maintain control throughout the movement, allowing your chest muscles to fully contract. Repeat this motion for the desired number of repetitions.
+
+After completing your set, carefully release the handles and ensure the machine is ready for the next user.
+</p>
+<h4> DO's</h4>
+<p>
+<ul>
+    <li>Warm-up is essential before starting your machine chest press routine. This prepares your muscles and joints for the workout, reducing the risk of injury.</li>
+    <li>Always use proper form throughout the exercise. This involves maintaining correct posture, controlled movements, and appropriate grip width. Proper form maximizes the effectiveness of the exercise and minimizes injury risk.</li>
+    <li>Gradually increase the weight you lift to allow your muscles and joints to adapt and grow stronger without undue stress.</li>
+    <li>Proper breathing is vital—inhale as you push the handles forward and exhale as you bring them back towards your chest. This helps maintain stability and control.</li>
+    <li>Perform the lift with smooth, controlled motions, avoiding any jerking or bouncing. This ensures consistent muscle engagement and reduces the risk of injury.</li>
+</ul>
+</p>
+
+<h4>DON'Ts</h4>
+<p>
+<ul>
+    <li>Avoid lifting weights that are too heavy for your current strength level. Lifting beyond your capacity can lead to serious injuries.</li>
+    <li>Never use momentum to push the handles forward. This not only risks injury but also diminishes the exercise's effectiveness by relying on momentum rather than muscle strength.</li>
+    <li>Flaring your elbows out excessively can put undue stress on your shoulder joints. Keep your elbows at a comfortable angle to maintain proper alignment.</li>
+    <li>Do not excessively arch your back while performing the machine chest press. Maintain a neutral spine position to protect your spine.</li>
+    <li>Keep your feet stable throughout the exercise. Moving your feet or shifting your stance can decrease stability and compromise your form.</li>
+    <li>Never skip your warm-up. Warming up prepares your muscles for the workout, reducing the risk of strains and injuries.</li>
+</ul>
+</p>
+
+    
+
+
+    <div class="containers">
+        <h3>For more info:</h3>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/sqNwDkUU_Ps?si=3gUa6BbApks07yMx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <hr>
+
+    <section class="pt-5 pb-5" >
+      <div class="container">
+          <div class="row">
+              <div class="col-6">
+                  <h3 class="mb-3">See more excercises:</h3>
+              </div>
+              <div class="col-6 text-right">
+                  <a class="btn btn-light mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                      <i class="fa fa-arrow-left"></i>
+                  </a>
+                  <a class="btn btn-light mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                      <i class="fa fa-arrow-right"></i>
+                  </a>
+              </div>
+              <div class="col-12">
+                  <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+  
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <div class="row">
+
+                                  <div class="col-md-4 mb-3">
+                                      <div class="cards">
+                                          <a href="chestequip1.html"><img class="img-fluid" alt="100%x280" src="images/bench.jpg"></a>
+                                          <div class="card-body">
+                                              <h4 class="card-title">Barbell Bench Press</h4>
+                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="cards">
+                                          <a href="chestequip2.html"><img class="img-fluid" alt="100%x280" src="images/machine fly.jpg"></a>
+                                          <div class="card-body">
+                                              <h4 class="card-title">Machine Chest Fly</h4>
+                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  
+                                          </div>
+                                      </div>
+                                  </div>
+  
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="row">
+  
+                                  <div class="col-md-4 mb-3">
+                                      <div class="cards">
+                                          <a href="chestequip3.html"><img class="img-fluid" alt="100%x280" src="images/dips1.jpg"></a>
+                                          <div class="card-body">
+                                              <h4 class="card-title">Dips</h4>
+                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  
+                                          </div>
+  
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="cards">
+                                          <a href="chestequip5.html"><img class="img-fluid" alt="100%x280" src="images/For Cardio.jpg"></a>
+                                          <div class="card-body">
+                                              <h4 class="card-title">Push-Ups</h4>
+                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  
+                                          </div>
+                                      </div>
+                                  </div>
+                                  
+  
+                              </div>
+                          </div>
+                         
+                                 
+                                  
+                             
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+  <footer id="Footer">
+    <div class="row">
+        <div class="col">
+            <a href="index.html"><img src="images/bodybuilder-male-figure-icon-gym-600nw-2278523791.webp" class="logo" alt="logo"></a>
+            <p>Thank You For Visiting WeGym, We garauntee you to deliver all the quality and Helpfull informations about gym equipments. </p>
+        </div>
+        <div class="col">
+            <h3>ABOUT</h3>
+            <a href="about.html" class="text-decoration-none"><p>About Us</p></a>
+            <p>Privacy Policy & Terms of Use</p>
+        </div>
+        <div class="col">
+            <h3>TARGET</h3>
+                    <ul class="list-unstyled">
+                        <a class="text-decoration-none text-muted" href="chest.html"><li>Chest Equipments</li></a>
+                        <a class="text-decoration-none text-muted" href="back.html"><li>Back Equipments</li></a>
+                        <a class="text-decoration-none text-muted" href="legs.html"><li>Legs Equipments</li></a>
+                        <a class="text-decoration-none text-muted" href="arms.html"><li>Arms Equipments</li></a>
+                        <a class="text-decoration-none text-muted" href="cardio.html"><li>Cardio Equipments</li></a>
+                    </ul>
+        </div>
+        <div class="col">
+            <h3>CONTACT ME</h3>
+            <form>
+                <input type="email" placeholder="your@email.com" class="email" name="EMAIL">
+                <button type="submit" class="btn btn-primary btn-sm" style="background-color: #f38200;" id="button">START CONTACT</button> <br>
+                <caption>You Wanna Look Good? Say less</caption>
+            </form>
+            <div class="social">
+                <a href="about.html"><i class="fab fa-facebook-f"></i></a>
+                <a href="about.html"><i class="fab fa-twitter"></i></a>
+                <a href="about.html"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <hr>
+        <p class="text-center"> Copyright © 2024 Pangasinan State University. All Rights Reserved
+            Alaminos City, Pangasinan</p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
